@@ -117,3 +117,29 @@ Following is the response for testing trasaction values:
 ![container analysis](https://github.com/user-attachments/assets/a5c42d7f-bf74-48f9-b310-d3b3ac86c716)
 
 **NOTE:-** The critical vulnerability in above container is due to the fact that I have allowed parsing in the API. Since, I am not deploying it anywhere for general purpose, it is ok to ignore this vulnerability. But it's a good practice if we could incorporate token to access the API. 
+
+# Commands Summary
+
+**1. Run FastAPI:** uvicorn app.main:app --reload
+
+**2. Checking API health status:** http://127.0.0.1:8000
+
+**3. Checking FastAPI Swagger UI:** http://127.0.0.1:8000/docs#/
+
+**4. Building Docker image:** docker build -t fraud_detection_api .
+
+**5. Running Docker container:** docker run -d -p 8000:8000 fraud_detection_api
+
+# Credits
+
+**Kaggle:** for the dataset
+
+**NOTE:-** Due to the large dataset, I have uploaded the chunk of the dataset in the repository. So to access the complete dataset, access it [here](https://www.kaggle.com/datasets/sriharshaeedala/financial-fraud-detection-dataset/data).
+
+# Contributing
+
+If you wouldd like to contribute to the project, feel free to fork the repository and submit a pull request. For any issues or feature requests, please open an issue on GitHub.
+
+# License
+
+This project is licensed under the MIT License. 
