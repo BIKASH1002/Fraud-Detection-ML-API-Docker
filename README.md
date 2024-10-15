@@ -12,9 +12,9 @@ This project is an end-to-end Machine Learning solution for detecting fraudulent
 
 3. [Procedure](#procedure)
 
-4. [API Endpoints](#api endpoints)
+4. [API Endpoints](#api-endpoints)
   
-5. [Dockerization](#dockerization)
+5. [Containerization](#containerization)
 
 ## Overview
 
