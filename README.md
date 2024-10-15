@@ -16,6 +16,8 @@ This project is an end-to-end Machine Learning solution for detecting fraudulent
   
 5. [Containerization](#containerization)
 
+6. [Commands Summary](#commands-summary)
+
 ## Overview
 
 This project uses Python, FastAP and Docker to provide a solution for predicting whether a financial transaction is fraudulent based on features like transaction type, amount and balances. The FastAPI application provides an easy-to-use interface where users can interact with the model and get predictions.
