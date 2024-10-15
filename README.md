@@ -90,33 +90,45 @@ A simple endpoint to check if the API is running.
 
 Following is the response from GET endpoint:
 
-![get endpoint](https://github.com/user-attachments/assets/a8c88163-985b-4147-b313-2d8f073c0b32)
+<div align = "center">
+    <img src="https://github.com/user-attachments/assets/a8c88163-985b-4147-b313-2d8f073c0b32" alt="1" width="50%">
+</div> 
 
 **POST `/predict/`**
 
 This is the main endpoint for fraud prediction. The GET and POST endpoints could be viewed interactively in Fast API Swagger UI.
 
-![swagger UI](https://github.com/user-attachments/assets/8540dd37-da0d-4955-910c-977422701663)
+<div align = "center">
+    <img src="https://github.com/user-attachments/assets/8540dd37-da0d-4955-910c-977422701663" alt="1" width="50%">
+</div>
 
 Send a JSON payload with the transaction details and the API will return a prediction indicating whether the transaction is fraudulent.
 
-![manual value](https://github.com/user-attachments/assets/8986625e-1986-417e-b65a-8c05c8e2e854)
+<div align = "center">
+    <img src="https://github.com/user-attachments/assets/8986625e-1986-417e-b65a-8c05c8e2e854" alt="1" width="50%">
+</div>
 
 Following is the response for testing trasaction values:
 
-![checking api response](https://github.com/user-attachments/assets/29cf866c-9585-454e-ac4b-8730bbcad11d)
- 
+<div align = "center">
+    <img src="https://github.com/user-attachments/assets/29cf866c-9585-454e-ac4b-8730bbcad11d" alt="1" width="50%">
+</div>
+
 # Containerization
 
 - Create a dockerfile in the project repository defining the base image selection (lightweight Python image in our case), working directory, installing dependencies and exposing the ports.
 
 - Start Docker Desktop, build the image and run the Docker container. After proper setup, the container can be viewed as follows:
 
-![docker image](https://github.com/user-attachments/assets/be328612-258f-43bf-9d12-dcd4a4ec07ce)
+<div align = "center">
+    <img src="https://github.com/user-attachments/assets/be328612-258f-43bf-9d12-dcd4a4ec07ce" alt="1" width="50%">
+</div>
 
 - Do the container analysis to check the vulnerabilities. This can ve viewd as shown below: 
 
-![container analysis](https://github.com/user-attachments/assets/a5c42d7f-bf74-48f9-b310-d3b3ac86c716)
+<div align = "center">
+    <img src="https://github.com/user-attachments/assets/a5c42d7f-bf74-48f9-b310-d3b3ac86c716" alt="1" width="50%">
+</div>
 
 **NOTE:-** The critical vulnerability in above container is due to the fact that I have allowed parsing in the API. Since, I am not deploying it anywhere for general purpose, it is ok to ignore this vulnerability. But it's a good practice if we could incorporate token to access the API. 
 
@@ -142,7 +154,9 @@ Following is the response for testing trasaction values:
 
 If you wouldd like to contribute to the project, feel free to fork the repository and submit a pull request. For any issues or feature requests, please open an issue on GitHub.
 
+</div>
+
 # License
 
 This project is licensed under the MIT License. 
-</div>
+
