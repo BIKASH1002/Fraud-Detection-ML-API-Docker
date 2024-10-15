@@ -6,17 +6,17 @@ This project is an end-to-end Machine Learning solution for detecting fraudulent
 
 # Table of Contents
 
-1. Overview
+1. [Overview](#overview)
   
-2. Setup
+2. [Setup](#setup)
 
-3. Procedure
+3. [Procedure](#procedure)
 
-4. API Endpoints
+4. [API Endpoints](#api endpoints)
   
-5. Dockerization
+5. [Dockerization](#dockerization)
 
-# Overview
+## Overview
 
 This project uses Python, FastAP and Docker to provide a solution for predicting whether a financial transaction is fraudulent based on features like transaction type, amount and balances. The FastAPI application provides an easy-to-use interface where users can interact with the model and get predictions.
 
@@ -28,7 +28,7 @@ The project consists of the following main components:
 
 - **Containerization** of the application using Docker for easy deployment and environment consistency.
 
-# Setup
+## Setup
 
 - **Visual Studio Code:** for development
 
@@ -36,7 +36,7 @@ The project consists of the following main components:
 
 - **Docker:** for containerization
 
-# Procedure
+## Procedure
 
 To implement this work, follow the steps below to build, run and deploy the Fraud Detection API:
 
@@ -82,7 +82,7 @@ To implement this work, follow the steps below to build, run and deploy the Frau
 
 This procedure outlines the key steps to take the project from data preparation to deployment, ensuring a structured and secure solution for fraud detection.
 
-# API Endpoints
+## API Endpoints
 
 **GET `/`**
 
@@ -114,7 +114,7 @@ Following is the response for testing trasaction values:
     <img src="https://github.com/user-attachments/assets/29cf866c-9585-454e-ac4b-8730bbcad11d" alt="1" width="50%">
 </div>
 
-# Containerization
+## Containerization
 
 - Create a dockerfile in the project repository defining the base image selection (lightweight Python image in our case), working directory, installing dependencies and exposing the ports.
 
@@ -132,7 +132,7 @@ Following is the response for testing trasaction values:
 
 **NOTE:-** The critical vulnerability in above container is due to the fact that I have allowed parsing in the API. Since, I am not deploying it anywhere for general purpose, it is ok to ignore this vulnerability. But it's a good practice if we could incorporate token to access the API. 
 
-# Commands Summary
+## Commands Summary
 
 **1. Run FastAPI:** uvicorn app.main:app --reload
 
