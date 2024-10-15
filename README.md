@@ -79,3 +79,28 @@ To implement this work, follow the steps below to build, run and deploy the Frau
 - Address any critical vulnerabilities by updating the base image or dependencies to safer versions.
 
 This procedure outlines the key steps to take the project from data preparation to deployment, ensuring a structured and secure solution for fraud detection.
+
+# API Endpoints
+
+**GET `/`**
+
+A simple endpoint to check if the API is running.
+
+Following is the response from GET endpoint:
+
+![get endpoint](https://github.com/user-attachments/assets/a8c88163-985b-4147-b313-2d8f073c0b32)
+
+**POST `/predict/`**
+
+This is the main endpoint for fraud prediction. The GET and POST endpoints could be viewed interactively in Fast API Swagger UI.
+
+![swagger UI](https://github.com/user-attachments/assets/4f13ee36-f4ad-4b59-b6b2-0f3be46fc32f)
+
+Send a JSON payload with the transaction details and the API will return a prediction indicating whether the transaction is fraudulent.
+
+![manual value](https://github.com/user-attachments/assets/8986625e-1986-417e-b65a-8c05c8e2e854)
+
+Following is the response for testing trasaction values:
+
+![checking api response](https://github.com/user-attachments/assets/98b514b2-f953-4379-a797-a28985b583be)
+ 
