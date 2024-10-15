@@ -94,7 +94,7 @@ Following is the response from GET endpoint:
 
 This is the main endpoint for fraud prediction. The GET and POST endpoints could be viewed interactively in Fast API Swagger UI.
 
-![swagger UI](https://github.com/user-attachments/assets/4f13ee36-f4ad-4b59-b6b2-0f3be46fc32f)
+![swagger UI](https://github.com/user-attachments/assets/8540dd37-da0d-4955-910c-977422701663)
 
 Send a JSON payload with the transaction details and the API will return a prediction indicating whether the transaction is fraudulent.
 
@@ -102,5 +102,18 @@ Send a JSON payload with the transaction details and the API will return a predi
 
 Following is the response for testing trasaction values:
 
-![checking api response](https://github.com/user-attachments/assets/98b514b2-f953-4379-a797-a28985b583be)
+![checking api response](https://github.com/user-attachments/assets/29cf866c-9585-454e-ac4b-8730bbcad11d)
  
+# Containerization
+
+- Create a dockerfile in the project repository defining the base image selection (lightweight Python image in our case), working directory, installing dependencies and exposing the ports.
+
+- Start Docker Desktop, build the image and run the Docker container. After proper setup, the container can be viewed as follows:
+
+![docker image](https://github.com/user-attachments/assets/be328612-258f-43bf-9d12-dcd4a4ec07ce)
+
+- Do the container analysis to check the vulnerabilities. This can ve viewd as shown below: 
+
+![container analysis](https://github.com/user-attachments/assets/a5c42d7f-bf74-48f9-b310-d3b3ac86c716)
+
+**NOTE:-** The critical vulnerability in above container is due to the fact that I have allowed parsing in the API. Since, I am not deploying it anywhere for general purpose, it is ok to ignore this vulnerability. But it's a good practice if we could incorporate token to access the API. 
