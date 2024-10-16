@@ -2,7 +2,7 @@
 
 # Containerized Fraud Detection API: Leveraging ML and FastAPI
 
-</div align = "justify">
+<div align = "justify">
 
 This project is an end-to-end Machine Learning solution for detecting fraudulent transactions. The project includes a trained Machine Learning model, API integration using FastAPI and Containerization using Docker for deployment. The API allows users to input transaction details and get a fraud prediction based on the trained model.
 
@@ -148,6 +148,8 @@ Following is the response for testing trasaction values:
 
 **5. Running Docker container:** docker run -d -p 8000:8000 fraud_detection_api
 
+</div>
+
 # Credits
 
 **Kaggle:** for the dataset
@@ -157,8 +159,6 @@ Following is the response for testing trasaction values:
 # Contributing
 
 If you wouldd like to contribute to the project, feel free to fork the repository and submit a pull request. For any issues or feature requests, please open an issue on GitHub.
-
-</div>
 
 # License
 
