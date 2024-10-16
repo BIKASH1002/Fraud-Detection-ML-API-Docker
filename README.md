@@ -1,3 +1,5 @@
+![MasterHead](https://github.com/user-attachments/assets/73d78894-4b86-42b0-a6b0-fc725414d275)
+
 # Containerized Fraud Detection API: Leveraging ML and FastAPI
 
 </div align = "justify">
