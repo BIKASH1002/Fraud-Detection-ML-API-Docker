@@ -62,7 +62,7 @@ To implement this work, follow the steps below to build, run and deploy the Frau
 
 - Set up a FastAPI project to create a RESTful API for fraud detection.
 
-- Define endpoints such as a health check endpoint (GET /) to ensure the API is running and a prediction endpoint (POST /predict/) to accept transaction details and return a fraud prediction.
+- Define endpoints such as a health check endpoint (GET `/`) to ensure the API is running and a prediction endpoint (POST `/predict/`) to accept transaction details and return a fraud prediction.
 
 - Load the trained model within the FastAPI application to make predictions based on user inputs.
 
