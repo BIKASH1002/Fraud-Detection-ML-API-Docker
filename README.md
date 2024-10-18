@@ -158,7 +158,7 @@ Following is the response for testing trasaction values:
 
 # Contributing
 
-If you wouldd like to contribute to the project, you are most welcome to fork the repository and submit a pull request. For any issues or feature requests, please open an issue on GitHub.
+If you wouldd like to contribute to the project, you are most welcome to fork this repository and submit a pull request. For any issues or feature requests, please open an issue on GitHub.
 
 # License
 
